@@ -308,3 +308,36 @@ footer a:hover {
     color: #ccc;
     text-decoration: underline;
 }
+/* ============================================================
+   BLOQUE 11: Listas
+   ul,il y ol.
+   ============================================================ */
+
+ul {
+    text-align: center; 
+}
+
+li {
+    display: inline-block;
+    margin: 0 10px; 
+    padding: 5px;
+}
+
+ol {
+    text-align: center; 
+}
+/* ============================================================
+   BLOQUE 12: Barras de progresp
+   ul,il y ol.
+   ============================================================ */
+
+progress{
+    accent-color: rgb(11, 114, 49)
+}
+
+meter{
+    accent-color: rgb(11, 114, 49)
+}
+
+
+
