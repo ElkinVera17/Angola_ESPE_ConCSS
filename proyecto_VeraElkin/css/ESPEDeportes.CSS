@@ -1,0 +1,175 @@
+/* deportes.css - Corregido: tabla responsive e imágenes sin deformación */
+
+/* Fondo con líneas de campo deportivo */
+body {
+    background: #c0d6c0;
+}
+
+/* Bienvenida estilo marcador */
+.welcome {
+    background: #1a2f1a;
+    color: white;
+    border-radius: 16px;
+    padding: 25px 20px;
+}
+
+.welcome h2, .welcome p {
+    color: white;
+}
+
+
+/* Details estilo tarjeta */
+.info-details {
+    background: #fffaec;
+    border-radius: 24px;
+    border-bottom: 4px solid #ffb347;
+    margin-bottom: 5px;
+    padding: 12px 20px;
+}
+
+/* CONTENEDOR DE TARJETAS: flex con wrap */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/* Tarjetas de eventos: imagen fija pero proporcional */
+.card {
+    background: rgba(255,255,255,0.95);
+    border-radius: 20px;
+    overflow: hidden;
+    width: 280px;          
+    flex: 0 0 auto;        
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Imagen: ocupará el ancho completo, altura fija pero con cover */
+.card img {
+    width: 100%;
+    height: 150px;         /* altura fija razonable */
+    object-fit: cover;     /* recorta sin deformar */
+    object-position: center;
+    display: block;
+}
+
+.card h3 {
+    background: #0b7231;
+    color: white;
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 30px;
+    font-size: 1rem;
+    margin: -15px auto 10px auto; 
+    position: relative;
+    text-align: center;
+}
+
+.card p {
+    background: #f0ede5;
+    border-left: none;
+    border-radius: 12px;
+    padding: 8px 12px;
+    margin: 5px 12px;
+    font-size: 0.9rem;
+}
+
+/* Barra de progreso */
+progress {
+    height: 12px;
+    border-radius: 20px;
+    width: 70%;
+    margin: 5px auto;
+}
+progress::-webkit-progress-bar { background-color: #ddd; border-radius: 20px; }
+progress::-webkit-progress-value { background-color: #ffb347; border-radius: 20px; }
+
+/* Botón inscribirse */
+.btn-download {
+    background: #e67e22;
+    border-radius: 40px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 10px auto 15px;
+    padding: 8px 20px;
+    
+}
+.btn-download:hover {
+    background: #f39c12;
+}
+
+/* ========== TABLA RESPONSIVE ========== */
+.stats-table {
+    margin: 30px auto;
+    width: 100%;
+    overflow-x: auto;   /* permite scroll horizontal en móviles */
+    -webkit-overflow-scrolling: touch;
+}
+
+.stats-table table {
+    width: 100%;
+    min-width: 500px;   /* asegura que no se comprima demasiado */
+    background: white;
+    border-collapse: collapse;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.stats-table th {
+    background: #0b7231;
+    color: white;
+    padding: 12px 8px;
+    font-size: 0.9rem;
+}
+
+.stats-table td {
+    padding: 10px 6px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.stats-table td progress {
+    width: 100px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Ajuste para pantallas muy pequeñas */
+@media (max-width: 600px) {
+    .stats-table th, .stats-table td {
+        font-size: 0.75rem;
+        padding: 8px 4px;
+    }
+    .stats-table td progress {
+        width: 70px;
+    }
+    .card {
+        width: 90%;
+        max-width: 280px;
+    }
+}
+
+/* Para pantallas muy anchas, límite de ancho de las cards */
+@media (min-width: 1200px) {
+    .cards-container {
+        justify-content: center;
+    }
+    .card img {
+        height: 170px;   /* ligeramente más alta en monitores grandes */
+    }
+}
+
+/* Sección de crear evento */
+.upload-section fieldset {
+    background: #fff9ef;
+    border-radius: 28px;
+    border: 1px solid #ffcd94;
+}

@@ -1,0 +1,106 @@
+/* market.css - Estilo comercial, selectores simples */
+
+body {
+    background: #faf3e0;
+}
+
+/* Aside como banner */
+aside {
+    background: #0b7231;
+    color: white;
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+}
+
+aside h2, aside p {
+    color: white;
+}
+
+/* Contenedor de productos (los div directos dentro de section) */
+section > div {
+    background: white;
+    border-radius: 24px;
+    width: 300px;
+    margin: 15px;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+section > div:hover {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Los divs que tienen imagen de fondo (primer hijo) */
+section > div div:first-child {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+}
+
+section > div h2 {
+    font-size: 1.3rem;
+    margin: 12px;
+}
+
+section > div h1 {
+    color: #e67e22;
+    font-size: 1.8rem;
+    margin: 10px;
+}
+
+section > div a {
+    display: block;
+    background: #0b7231;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+}
+
+/* Formularios */
+.Buscar fieldset, .Añadir fieldset {
+    background: rgba(255,255,240,0.9);
+    border-radius: 28px;
+    border: 1px solid #ffc857;
+    padding: 20px;
+}
+
+/* Tabla de productos más vendidos: convertir en galería simple */
+section table {
+    background: transparent;
+    border-collapse: separate;
+    border-spacing: 15px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+section td {
+    background: white;
+    border-radius: 20px;
+    padding: 10px;
+    width: 180px;
+    height: 180px;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+}
+
+section td:hover {
+    background: #f0f5ea;
+}
+
+section td img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    display: block;
+}
+
+section tr {
+    background: transparent;
+}

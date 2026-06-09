@@ -1,0 +1,74 @@
+/* registro.css - Formulario limpio y moderno */
+
+body {
+    background: linear-gradient(145deg, #d4e4d4, #b8d0b8);
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* Contenedor del formulario */
+.registrate {
+    background: white;
+    border-radius: 32px;
+    padding: 20px;
+    max-width: 520px;
+    margin: 30px auto;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.2);
+}
+
+/* Campos con estilo */
+.registrate fieldset {
+    border: none;
+    background: #fefef7;
+    border-radius: 24px;
+    padding: 20px;
+}
+
+.registrate legend {
+    background: #0b7231;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 40px;
+    font-size: 1rem;
+}
+
+.registrate label {
+    width: 140px;
+    font-weight: 600;
+    color: #1e4a2a;
+}
+
+.registrate input, .registrate select {
+    background: #fafaf0;
+    border: 1px solid #c0d6c0;
+    border-radius: 28px;
+    padding: 10px 15px;
+    width: 240px;
+}
+
+.registrate input:focus {
+    outline: none;
+    border-color: #0b7231;
+    box-shadow: 0 0 0 2px rgba(11,114,49,0.2);
+}
+
+/* Botón registro */
+.registrate input[type="submit"] {
+    background: #0b7231;
+    width: auto;
+    padding: 10px 30px;
+    font-size: 1.1rem;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.registrate input[type="submit"]:hover {
+    background: #e67e22;
+    transform: scale(1.02);
+}
+
+/* Navegación simple */
+nav a {
+    background: #0b7231;
+    border-radius: 40px;
+    padding: 8px 24px;
+}
