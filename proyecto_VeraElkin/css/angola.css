@@ -241,3 +241,17 @@ aside hr {
         flex: 1 1 auto;
     }
 }
+
+/* ============================================================
+   BLOQUE 11: PANTALLAS ANCHAS
+   Aumenta la altura de las imágenes para evitar que se vean
+   demasiado aplastadas en monitores grandes.
+   ============================================================ */
+
+@media (min-width: 1200px) {
+
+    .card img {
+        height: 240px;
+    }
+
+}
