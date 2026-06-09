@@ -1,4 +1,21 @@
 /* ============================================================
+   BLOQUE 0: Variables de colores
+   ============================================================ */
+:root {
+    --espe-green: #0b7231;
+    --espe-green-dark: #064d22;
+    --espe-green-light: #e8f5e9;
+    --text-dark: #333333;
+    --text-light: #666666;
+    --white: #ffffff;
+    --gray-bg: #f5f5f5;
+    --gray-border: #cccccc;
+    --card-bg: rgba(71, 59, 59, 0.1);
+    --card-bg-light: rgba(71, 59, 59, 0.05);
+    --card-bg-medium: rgba(71, 59, 59, 0.08);
+}
+
+/* ============================================================
    BLOQUE 1: CONFIGURACIÓN GENERAL
    Selector universal, body, fuente, fondo, color e interlineado.
    ============================================================ */
@@ -16,7 +33,7 @@ html {
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f5f5f5;
+    background-color: var(--gray-bg);
     line-height: 1.5;
 }
 
@@ -26,38 +43,38 @@ body {
    ============================================================ */
 
 h1 {
-    color: #0b7231;
+    color: var(--espe-green);
     font-size: 2rem;
     margin: 24px 0;
     text-align: center;
 }
 
 h2 {
-    color: #0b7231;
+    color: var(--espe-green);
     font-size: 1.5rem;
     margin: 16px 0;
 }
 
 h3 {
-    color: #333;
+    color: var(--text-dark);
     font-size: 1.25rem;
     margin: 8px 0;
 }
 
 p {
-    color: #333;
+    color: var(--text-dark);
     font-size: 1rem;
     margin: 8px 0;
 }
 
 a {
     text-decoration: none;
-    color: #0b7231;
+    color: var(--espe-green);
 }
 
 a:hover {
     text-decoration: underline;
-    color: #064d22;
+    color: var(--espe-green-dark);
 }
 
 /* ============================================================
@@ -66,12 +83,12 @@ a:hover {
    ============================================================ */
 
 header {
-    background-color: white;
+    background-color: var(--white);
     padding: 8px 0;
 }
 
 nav {
-    background-color: #0b7231;
+    background-color: var(--espe-green);
     padding: 8px 0;
     text-align: center;
 }
@@ -98,7 +115,7 @@ article {
 }
 
 aside {
-    background-color: rgba(71, 59, 59, 0.1);
+    background-color: var(--card-bg);
     margin: 16px;
     padding: 16px;
     border-radius: 8px;
@@ -106,12 +123,13 @@ aside {
 }
 
 footer {
-    background-color: #0b7231;
-    color: white;
+    background-color: var(--espe-green);
+    color: var(--white);
     text-align: center;
     padding: 16px;
     margin-top: 40px;
 }
+
 
 /* ============================================================
    BLOQUE 4: MENÚ DE NAVEGACIÓN
@@ -119,7 +137,7 @@ footer {
    ============================================================ */
 
 nav a {
-    color: white;
+    color: var(--white);
     text-decoration: none;
     margin-right: 16px;
     padding: 8px 16px;
@@ -138,14 +156,14 @@ nav a:hover {
    ============================================================ */
 
 section section {
-    background-color: rgba(71, 59, 59, 0.05);
+    background-color: var(--card-bg-light);
     border-radius: 8px;
     margin: 16px;
     padding: 16px;
 }
 
 article {
-    background-color: rgba(71, 59, 59, 0.08);
+    background-color: var(--card-bg-medium);
     border-radius: 8px;
 }
 
@@ -166,7 +184,7 @@ figure {
 
 figcaption {
     font-size: 0.9rem;
-    color: #666;
+    color: var(--text-light);
     margin-top: 8px;
 }
 
@@ -203,14 +221,14 @@ form {
 }
 
 fieldset {
-    border: 2px solid #0b7231;
+    border: 2px solid var(--espe-green);
     border-radius: 8px;
     padding: 16px;
     margin: 16px 0;
 }
 
 legend {
-    color: #0b7231;
+    color: var(--espe-green);
     font-weight: bold;
     padding: 0 16px;
     font-size: 1.2rem;
@@ -227,7 +245,7 @@ label {
 input, textarea, select {
     padding: 8px;
     margin: 8px 0;
-    border: 1px solid #ccc;
+    border: 1px solid var(--gray-border);
     border-radius: 8px;
     font-family: Arial, sans-serif;
     width: 248px;
@@ -240,8 +258,8 @@ textarea {
 }
 
 button, input[type="submit"] {
-    background-color: #0b7231;
-    color: white;
+    background-color: var(--espe-green);
+    color: var(--white);
     border: none;
     padding: 8px 24px;
     border-radius: 8px;
@@ -251,7 +269,7 @@ button, input[type="submit"] {
 }
 
 button:hover, input[type="submit"]:hover {
-    background-color: #064d22;
+    background-color: var(--espe-green-dark);
     cursor: pointer;
 }
 
@@ -263,12 +281,12 @@ button:hover, input[type="submit"]:hover {
 table {
     width: 80%;
     margin: 16px auto;
-    background-color: white;
+    background-color: var(--white);
 }
 
 th {
-    background-color: #0b7231;
-    color: white;
+    background-color: var(--espe-green);
+    color: var(--white);
     padding: 16px;
     border: 1px solid #ddd;
 }
@@ -279,9 +297,8 @@ td {
     text-align: center;
 }
 
-
 tr:hover {
-    background-color: #e8f5e9;
+    background-color: var(--espe-green-light);
 }
 
 /* ============================================================
@@ -289,8 +306,8 @@ tr:hover {
    Estilos para footer, footer p y footer address.
    ============================================================ */
 
-footer p {
-    color: white;
+ffooter p {
+    color: var(--white);
     margin: 8px 0;
 }
 
@@ -301,7 +318,7 @@ footer address {
 }
 
 footer a {
-    color: white;
+    color: var(--white);
 }
 
 footer a:hover {
@@ -331,12 +348,12 @@ ol {
    ul,il y ol.
    ============================================================ */
 
-progress{
-    accent-color: rgb(11, 114, 49)
+progress {
+    accent-color: var(--espe-green);
 }
 
-meter{
-    accent-color: rgb(11, 114, 49)
+meter {
+    accent-color: var(--espe-green);
 }
 
 

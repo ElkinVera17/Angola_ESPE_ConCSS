@@ -1,98 +1,118 @@
 <!DOCTYPE html>
-<html lang = "es">
-    <head>
-        <meta charset = "UTF-8">
-        <title>Angora</title>
-        <link rel="stylesheet" href="../css/general.css">
-        <link rel="icon" href="../img/Angola/union.ico" type="image/x-icon">  
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" >
-    </head>
+<html lang="es">
 
-    <body ><!-- style = "text-align: center; font-family:Arial; background-color: rgb(255, 255, 255);" -->
+<head>
+    <meta charset="UTF-8">
+    <title>Angola - Comunidad ESPE</title>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/angola.css">
+    <link rel="icon" href="../img/Angola/union.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
 
-        <header>
-            <h1>Angola</h1>
-        </header>
+<body>
 
-        <figure>
-            <img src="../img/espe.png" alt="Logo Espe" width = "200" height ="100"  >
-            <figcaption>Universidad de las Fuerzas Armadas Espe</figcaption>
-        </figure>
+    <header>
+        <h1>Angola</h1>
+    </header>
 
-        <nav ><!-- style ="background-color : rgb(11, 114, 49)" -->
-            <a href="#" ><!-- style = "color:aliceblue ; text-decoration:none ;margin-right: 10px" --> <i class="fa-solid fa-house"></i> Página Principal </a>
-            <a href="../pages/ESPEAcademic.html" ><!-- style = "color:aliceblue ; text-decoration:none  ;margin-right: 10px" --> <i class="fa-solid fa-graduation-cap"></i> Academico </a>
-            <a href="../pages/ESPEDeportes.html" ><!-- style = "color:aliceblue ; text-decoration:none  ;margin-right: 10px" --><i class="fa-solid fa-futbol"></i> Deportes </a>
-            <a href="../pages/ESPEMarket.html" ><!-- style = "color:aliceblue ; text-decoration:none  ;margin-right: 10px" --><i class="fa-solid fa-cart-shopping"></i> Market </a>
-            <a href="../pages/ESPEMembers.html" ><!-- style = "color:aliceblue ; text-decoration:none  ;margin-right: 10px" --><i class="fa-solid fa-users"></i> Members </a>
-            <a href="../index.html" ><!-- style = "color:aliceblue ; text-decoration:none  ;margin-right: 10px" --><i class="fa-solid fa-sign-out-alt"></i> Salir </a>
-        </nav>
+    <figure>
+        <img src="../img/espe.png" alt="Logo Universidad de las Fuerzas Armadas ESPE" width="200" height="100">
+        <figcaption>Universidad de las Fuerzas Armadas ESPE - Santo Domingo</figcaption>
+    </figure>
 
-        <aside ><!-- style = "background-color: rgba(71, 59, 59, 0.164); margin: 20px; padding: 20px; border-radius: 8px;" -->
-            <h2>Bienvenido a Angola </h2>
+    <nav >
+        <a href="#" ><i class="fa-solid fa-house"></i> Página Principal</a>
+        <a href="../pages/ESPEAcademic.html"><i class="fa-solid fa-graduation-cap"></i> Académico</a>
+        <a href="../pages/ESPEDeportes.html"><i class="fa-solid fa-futbol"></i> Deportes</a>
+        <a href="../pages/ESPEMarket.html"><i class="fa-solid fa-cart-shopping"></i> Market</a>
+        <a href="../pages/ESPEMembers.html"><i class="fa-solid fa-users"></i> Members</a>
+        <a href="../index.html"><i class="fa-solid fa-sign-out-alt"></i> Salir</a>
+    </nav>
+
+    <!-- ================= ASIDE ================= -->
+    <aside>
+        <h2><i class="fa-solid fa-bullhorn"></i> Avisos importantes</h2>
+        <p><strong> <i class="fa-solid fa-reloj"> </i>Atencion en biblioteca</strong> 08:00-13:00</p>
+        <p><strong><i class="fa-solid computadora"> </i>Hackathon ESPE</strong> - 15 de Julio 2026</p>
+        <hr>
+        <p><small>Actualizado: Junio 2026</small></p>
+    </aside>
+
+    <!-- ================= MAIN ================= -->
+    <main>
+
+        <section class="bienvenido">
+            <h2>Bienvenido a Angola</h2>
             <i class="fa-solid fa-handshake fa-3x"></i>
-            <p> Un punto de encuentro para estudiantes de la Universidad de las Fuerzas Armadas Espe</p>
-        </aside>
+            <p>Un punto de encuentro para estudiantes de la Universidad de las Fuerzas Armadas ESPE</p>
+        </section>
 
-<section class="Targetas vinculos" ><!-- style="text-align: center;" -->
+        <h2>Servicios disponibles</h2>
+        <div class="cards-container">
+            
+            <article class="card">
+                <a href="../pages/ESPEAcademic.html" class="card-link">
+                    <img src="../img/Angola/LogosLibros.jpg" alt="Recursos académicos">
+                    <h3>ESPE Académico</h3>
+                    <p>Exámenes pasados, material de estudio y más</p>
+                </a>
+            </article>
 
-<a href="../pages/ESPEAcademic.html" ><!-- style="text-decoration: none; color: black ;" -->
-    <div ><!-- style="background-color: rgba(71, 59, 59, 0.164); width: 350px; margin: 20px; padding: 20px; display: inline-block; border-radius: 8px;" -->
-        <figure>
-            <img src="../img/Angola/LogosLibros.jpg" alt="Angola" width="200" height="100">
-            <figcaption>ESPEAcadémico </figcaption>
-        </figure>
-    </div>
-</a>
+            <article class="card">
+                <a href="../pages/ESPEDeportes.html" class="card-link">
+                    <img src="../img/Angola/Deportes.png" alt="Eventos deportivos">
+                    <h3>ESPE Deportes</h3>
+                    <p>Torneos, entrenamientos y actividad física</p>
+                </a>
+            </article>
 
-<a href="../pages/ESPEDeportes.html" ><!-- style="text-decoration: none; color: black ;" -->
-    <div ><!-- style="background-color: rgba(71, 59, 59, 0.164); width: 350px; margin: 20px; padding: 20px; display: inline-block; border-radius: 8px;" -->
-        <figure>
-            <img src="../img/Angola/Deportes.png" alt="Angola" width="200" height="100">
-            <figcaption>ESPEDeportes  </figcaption>
-        </figure>
-    </div>
-</a>
+            <article class="card">
+                <a href="../pages/ESPEMarket.html" class="card-link">
+                    <img src="../img/Angola/Market.png" alt="Marketplace estudiantil">
+                    <h3>ESPE Market</h3>
+                    <p>Compra y venta entre estudiantes</p>
+                </a>
+            </article>
 
-<a href="../pages/ESPEMarket.html" ><!-- style="text-decoration: none; color: black ;" -->
-    <div ><!-- style="background-color: rgba(71, 59, 59, 0.164); width: 350px; margin: 20px; padding: 20px; display: inline-block; border-radius: 8px;" -->
-        <figure>
-            <img src="../img/Angola/Market.png" alt="Angola" width="200" height="100">
-            <figcaption>ESPEMarket </figcaption>
-        </figure>
-    </div>
-</a>
+            <article class="card">
+                <a href="../pages/ESPEMembers.html" class="card-link">
+                    <img src="../img/Angola/Members.webp" alt="Membresías compartidas">
+                    <h3>ESPE Members</h3>
+                    <p>Comparte suscripciones y ahorra</p>
+                </a>
+            </article>
+        </div>
+ <section class="info-section">
+            <details>
+                <summary>¿Por qué se creó Angola?</summary>
+                <p>Angola nace por las distintas necesidades de los estudiantes de la ESPE Santo Domingo, para que tengan una comunidad más unida y colaborativa.</p>
+            </details>
+        </section>
+        
 
-<a href="../pages/ESPEMembers.html" ><!-- style="text-decoration: none; color: black ;" -->
-    <div ><!-- style="background-color: rgba(71, 59, 59, 0.164); width: 350px; margin: 20px; padding: 20px; display: inline-block; border-radius: 8px;" -->
-        <figure>
-            <img src="../img/Angola/LogosLibros.jpg" alt="Angola" width="200" height="100">
-            <figcaption>ESPEMembers </figcaption>
-        </figure>
-    </div>
-</a>
-</section>
+        <section class="location-section">
+            <h3> Nuestra ubicación</h3>
+            <a href="https://www.google.com/maps/place/Universidad+de+las+Fuerzas+Armadas+-+ESPE+-+Santo+Domingo/@-0.4127032,-79.3120465,17z"
+               target="_blank" rel="noopener noreferrer" class="location-card">
+                <img src="../img/Angola/Ubi.webp" alt="Mapa de ubicación ESPE Santo Domingo">
+                <span><i class="fa-solid fa-map-pin"></i> Visítanos en Santo Domingo</span>
+            </a>
+        </section>
 
-<details>
-    <summary>¿Porque se creó Angola?</summary>
-    <p>Angola nace por las distintas necesidades de los estudiantes de la ESPE Santo Domingo, para que los estudiantes tengan una comunidad más unida</p>
-</details>
+       
 
-<section ><!-- style="text-align: center; margin: 20px; padding: 20px; border-radius: 8px; background-color: rgba(71, 59, 59, 0.164);" -->
-    
-    <a href="https://www.google.com/maps/place/Universidad+de+las+Fuerzas+Armadas+-+ESPE+-+Santo+Domingo/@-0.4127032,-79.3120465,17z/data=!3m1!4b1!4m6!3m5!1s0x91d53237044f39bb:0x24ed753bfe34c98b!8m2!3d-0.4127086!4d-79.3094716!16s%2Fg%2F11f11shpmz?entry=ttu&g_ep=EgoyMDI2MDUxNy4wIKXMDSoASAFQAw%3D%3D" 
-    target="_blank" ><!-- style="text-decoration : none ;" -->
-        <figure>
-            <img src="../img/Angola/Ubi.webp" alt="Espe Santo Domingo" width="500" height="300">
-            <figcaption ><!-- style="color: rgba(0, 0, 0, 0.637);" -->Visitanos </figcaption>
-        </figure>
+    </main>
+ <a href="#" class="Arriba">
+        <i class="fa-solid fa-arrow-up"></i>
     </a>
+    <footer>
+        <p>&copy; 2026 ESPE. Todos los derechos reservados</p>
+        <p><small>Comunidad Angola - Uniendo estudiantes</small></p>
+    </footer>
 
-</section>
+    
 
-<footer ><!-- style = "background-color: rgb(11, 114, 49); color: white; padding: 10px;" -->
-    <p> &copy; 2026  Espe. Todos los derechos reservados</p>
-</footer>
+</body>
 
-    </body>
 </html>
