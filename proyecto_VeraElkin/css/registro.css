@@ -1,11 +1,22 @@
-/* registro.css - Formulario limpio y moderno */
 
+
+
+/* ============================================================
+   BLOQUE 1: CONFIGURACIÓN GENERAL
+   Define el fondo degradado y la fuente principal
+   utilizada en toda la página.
+   ============================================================ */
 body {
     background: linear-gradient(145deg, #d4e4d4, #b8d0b8);
     font-family: 'Poppins', Arial, sans-serif;
 }
 
-/* Contenedor del formulario */
+
+/* ============================================================
+   BLOQUE 2: CONTENEDOR DEL FORMULARIO
+   Tarjeta principal que contiene todo el formulario
+   de registro.
+   ============================================================ */
 .registrate {
     background: white;
     border-radius: 32px;
@@ -15,7 +26,11 @@ body {
     box-shadow: 0 20px 35px rgba(0,0,0,0.2);
 }
 
-/* Campos con estilo */
+
+/* ============================================================
+   BLOQUE 3: FIELDSET DEL FORMULARIO
+   Agrupa visualmente los campos de entrada.
+   ============================================================ */
 .registrate fieldset {
     border: none;
     background: #fefef7;
@@ -23,6 +38,11 @@ body {
     padding: 20px;
 }
 
+
+/* ============================================================
+   BLOQUE 4: LEYENDA DEL FORMULARIO
+   Etiqueta decorativa que identifica la sección.
+   ============================================================ */
 .registrate legend {
     background: #0b7231;
     color: white;
@@ -31,13 +51,24 @@ body {
     font-size: 1rem;
 }
 
+
+/* ============================================================
+   BLOQUE 5: ETIQUETAS DE LOS CAMPOS
+   Estilo de los textos descriptivos de cada entrada.
+   ============================================================ */
 .registrate label {
     width: 140px;
     font-weight: 600;
     color: #1e4a2a;
 }
 
-.registrate input, .registrate select {
+
+/* ============================================================
+   BLOQUE 6: CAMPOS DE ENTRADA Y SELECCIÓN
+   Apariencia de los inputs y listas desplegables.
+   ============================================================ */
+.registrate input,
+.registrate select {
     background: #fafaf0;
     border: 1px solid #c0d6c0;
     border-radius: 28px;
@@ -45,13 +76,23 @@ body {
     width: 240px;
 }
 
+
+/* ============================================================
+   BLOQUE 7: EFECTO FOCUS DE LOS INPUTS
+   Resalta el campo que está siendo utilizado.
+   ============================================================ */
 .registrate input:focus {
     outline: none;
     border-color: #0b7231;
     box-shadow: 0 0 0 2px rgba(11,114,49,0.2);
 }
 
-/* Botón registro */
+
+/* ============================================================
+   BLOQUE 8: BOTÓN DE REGISTRO
+   Apariencia principal del botón para enviar
+   el formulario.
+   ============================================================ */
 .registrate input[type="submit"] {
     background: #0b7231;
     width: auto;
@@ -61,12 +102,23 @@ body {
     cursor: pointer;
     transition: 0.2s;
 }
+
+
+/* ============================================================
+   BLOQUE 9: EFECTO HOVER DEL BOTÓN
+   Cambia el color y tamaño cuando el usuario
+   pasa el cursor sobre él.
+   ============================================================ */
 .registrate input[type="submit"]:hover {
     background: #e67e22;
     transform: scale(1.02);
 }
 
-/* Navegación simple */
+
+/* ============================================================
+   BLOQUE 10: NAVEGACIÓN
+   Estilo de los enlaces de navegación.
+   ============================================================ */
 nav a {
     background: #0b7231;
     border-radius: 40px;

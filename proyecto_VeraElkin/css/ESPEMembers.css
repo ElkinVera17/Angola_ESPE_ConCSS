@@ -1,10 +1,19 @@
-/* members.css - Versión limpia sin selectores complejos */
 
+
+
+/* ============================================================
+   BLOQUE 1: FONDO GENERAL DE LA PÁGINA
+   Define el color de fondo de la sección de membresías.
+   ============================================================ */
 body {
     background: #eef2f5;
 }
 
-/* Aside */
+
+/* ============================================================
+   BLOQUE 2: SECCIÓN DE BIENVENIDA
+   Estilo del aside principal con información introductoria.
+   ============================================================ */
 aside {
     background: #2c3e2b;
     color: white;
@@ -14,11 +23,17 @@ aside {
     margin-bottom: 30px;
 }
 
-aside h2, aside p {
+aside h2,
+aside p {
     color: white;
 }
 
-/* Contenedor de formularios */
+
+/* ============================================================
+   BLOQUE 3: CONTENEDOR DE FORMULARIOS
+   Organiza los formularios usando Flexbox y permite
+   acomodarlos en varias filas cuando sea necesario.
+   ============================================================ */
 .formularios-members {
     display: flex;
     flex-wrap: wrap;
@@ -27,7 +42,13 @@ aside h2, aside p {
     margin-bottom: 40px;
 }
 
-.form-buscar, .form-publicar {
+
+/* ============================================================
+   BLOQUE 4: FORMULARIOS DE BÚSQUEDA Y PUBLICACIÓN
+   Apariencia de las tarjetas que contienen formularios.
+   ============================================================ */
+.form-buscar,
+.form-publicar {
     background: white;
     border-radius: 28px;
     padding: 20px;
@@ -37,7 +58,11 @@ aside h2, aside p {
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-/* Contenedor de tarjetas */
+
+/* ============================================================
+   BLOQUE 5: CONTENEDOR DE TARJETAS
+   Distribuye las membresías en formato de tarjetas.
+   ============================================================ */
 .cards-members {
     display: flex;
     flex-wrap: wrap;
@@ -46,7 +71,11 @@ aside h2, aside p {
     margin-top: 20px;
 }
 
-/* Tarjeta individual */
+
+/* ============================================================
+   BLOQUE 6: TARJETAS DE MEMBRESÍAS
+   Define la estructura visual de cada membresía.
+   ============================================================ */
 .card-members {
     background: white;
     border-radius: 28px;
@@ -55,8 +84,10 @@ aside h2, aside p {
 }
 
 
-
-/* Cabecera de la tarjeta (verde) */
+/* ============================================================
+   BLOQUE 7: CABECERA DE LA TARJETA
+   Área superior destacada con nombre y descripción.
+   ============================================================ */
 .card-header {
     background: #0b7231;
     color: white;
@@ -75,11 +106,20 @@ aside h2, aside p {
     margin: 0;
 }
 
-/* Cuerpo de la tarjeta */
+
+/* ============================================================
+   BLOQUE 8: CUERPO DE LA TARJETA
+   Contiene beneficios, precio y demás información.
+   ============================================================ */
 .card-body {
     padding: 20px;
 }
 
+
+/* ============================================================
+   BLOQUE 9: INDICADOR DE ESPACIOS DISPONIBLES
+   Etiqueta visual para mostrar cupos restantes.
+   ============================================================ */
 .espacios {
     background: #ffecb3;
     display: inline-block;
@@ -89,6 +129,11 @@ aside h2, aside p {
     margin-bottom: 15px;
 }
 
+
+/* ============================================================
+   BLOQUE 10: LISTA DE BENEFICIOS
+   Formato de la lista y de cada elemento incluido.
+   ============================================================ */
 .card-body ul {
     list-style: none;
     padding-left: 0;
@@ -104,6 +149,11 @@ aside h2, aside p {
     text-align: center;
 }
 
+
+/* ============================================================
+   BLOQUE 11: PRECIO DE LA MEMBRESÍA
+   Resalta el costo principal y texto secundario.
+   ============================================================ */
 .precio {
     font-size: 2rem;
     color: #e67e22;
@@ -117,6 +167,11 @@ aside h2, aside p {
     color: #666;
 }
 
+
+/* ============================================================
+   BLOQUE 12: BOTÓN UNIRSE
+   Estilo principal y efecto hover del botón de acción.
+   ============================================================ */
 .btn-unirse {
     display: block;
     background: #0b7231;
@@ -133,14 +188,19 @@ aside h2, aside p {
     background: #e67e22;
 }
 
-/* Responsive */
+
+/* ============================================================
+   BLOQUE 13: DISEÑO RESPONSIVE
+   Ajustes para mejorar la visualización en móviles.
+   ============================================================ */
 @media (max-width: 700px) {
     .card-members {
         width: 90%;
         max-width: 320px;
     }
-    
-    .form-buscar, .form-publicar {
+
+    .form-buscar,
+    .form-publicar {
         width: 100%;
     }
 }
