@@ -204,3 +204,22 @@ aside p {
         width: 100%;
     }
 }
+
+/* ============================================================
+   BLOQUE 14: BOTÓN VOLVER ARRIBA
+   Permite regresar rápidamente al inicio.
+   ============================================================ */
+
+.arriba {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--espe-green);
+    color: var(--white);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

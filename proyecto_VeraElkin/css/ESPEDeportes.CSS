@@ -257,3 +257,22 @@ progress::-webkit-progress-value {
     border-radius: 28px;
     border: 1px solid #ffcd94;
 }
+
+/* ============================================================
+   BLOQUE 18: BOTÓN VOLVER ARRIBA
+   Permite regresar rápidamente al inicio.
+   ============================================================ */
+
+.arriba {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--espe-green);
+    color: var(--white);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
