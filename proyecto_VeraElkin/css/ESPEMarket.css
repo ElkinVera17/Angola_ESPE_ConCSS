@@ -1,106 +1,160 @@
-/* market.css - Estilo comercial, selectores simples */
+/* market.css - Versión limpia sin selectores complejos */
 
 body {
     background: #faf3e0;
 }
 
-/* Aside como banner */
-aside {
+/* Aside de bienvenida */
+.bienvenida-market {
     background: #0b7231;
     color: white;
     border-radius: 30px;
-    padding: 20px;
+    padding: 25px;
     text-align: center;
+    margin-bottom: 30px;
 }
 
-aside h2, aside p {
+.bienvenida-market h2,
+.bienvenida-market p {
     color: white;
 }
 
-/* Contenedor de productos (los div directos dentro de section) */
-section > div {
+/* Formulario de búsqueda */
+.buscador-market fieldset {
     background: white;
-    border-radius: 24px;
-    width: 300px;
-    margin: 15px;
-    display: inline-block;
-    vertical-align: top;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 28px;
+    border: 1px solid #ffc857;
+    padding: 25px;
 }
 
-section > div:hover {
+/* Contenedor de productos */
+.cards-productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+/* Tarjeta de producto individual */
+.card-producto {
+    background: white;
+    border-radius: 24px;
+    width: 280px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.card-producto:hover {
+    transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-/* Los divs que tienen imagen de fondo (primer hijo) */
-section > div div:first-child {
+/* Imagen del producto */
+.card-imagen {
     height: 180px;
     background-size: cover;
     background-position: center;
 }
 
-section > div h2 {
-    font-size: 1.3rem;
-    margin: 12px;
+/* Información del producto */
+.card-info {
+    padding: 15px;
+    text-align: center;
 }
 
-section > div h1 {
-    color: #e67e22;
+.card-info h3 {
+    color: #0b7231;
+    font-size: 1.2rem;
+    margin: 0 0 8px 0;
+}
+
+.card-info p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.precio {
     font-size: 1.8rem;
-    margin: 10px;
+    color: #e67e22;
+    font-weight: bold;
+    margin: 10px 0;
 }
 
-section > div a {
+.likes {
+    color: #e74c3c;
+    margin: 8px 0;
+}
+
+/* Botón añadir al carrito */
+.btn-carrito {
     display: block;
     background: #0b7231;
     color: white;
     text-decoration: none;
-    padding: 12px;
+    padding: 10px;
+    border-radius: 40px;
     text-align: center;
-    border-radius: 0 0 20px 20px;
+    font-weight: bold;
+    margin-top: 12px;
+    transition: background 0.2s;
 }
 
-/* Formularios */
-.Buscar fieldset, .Añadir fieldset {
-    background: rgba(255,255,240,0.9);
+.btn-carrito:hover {
+    background: #e67e22;
+}
+
+/* Formulario publicar producto */
+.publicar-market fieldset {
+    background: white;
     border-radius: 28px;
     border: 1px solid #ffc857;
-    padding: 20px;
+    padding: 25px;
 }
 
-/* Tabla de productos más vendidos: convertir en galería simple */
-section table {
-    background: transparent;
-    border-collapse: separate;
-    border-spacing: 15px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-section td {
-    background: white;
-    border-radius: 20px;
-    padding: 10px;
-    width: 180px;
-    height: 180px;
+/* Galería de productos más vendidos */
+.top-productos {
+    margin: 40px 0;
     text-align: center;
-    vertical-align: middle;
-    border: none;
 }
 
-section td:hover {
-    background: #f0f5ea;
+.top-productos h3 {
+    color: #0b7231;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
 }
 
-section td img {
-    width: 100%;
-    height: 100%;
+.galeria-productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.galeria-productos img {
+    width: 150px;
+    height: 150px;
     object-fit: cover;
-    border-radius: 16px;
-    display: block;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
 }
 
-section tr {
-    background: transparent;
+.galeria-productos img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .card-producto {
+        width: 90%;
+        max-width: 280px;
+    }
+    
+    .galeria-productos img {
+        width: 100px;
+        height: 100px;
+    }
 }

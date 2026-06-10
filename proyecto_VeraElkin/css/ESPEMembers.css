@@ -1,106 +1,146 @@
-/* members.css - Estilo colaborativo, selectores simples */
+/* members.css - Versión limpia sin selectores complejos */
 
 body {
     background: #eef2f5;
 }
 
-/* Aside de bienvenida */
+/* Aside */
 aside {
     background: #2c3e2b;
     color: white;
     border-radius: 40px 12px 40px 12px;
-    padding: 20px;
+    padding: 25px;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 aside h2, aside p {
     color: white;
 }
 
-/* Formularios lado a lado */
-.BuscaryPublicar form {
-    background: rgba(255,255,245,0.9);
-    border-radius: 28px;
-    padding: 15px;
-    margin: 10px;
-    display: inline-block;
-    width: 45%;
-    vertical-align: top;
+/* Contenedor de formularios */
+.formularios-members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
 }
 
-/* Tarjetas de membresía */
-.Membresias div {
+.form-buscar, .form-publicar {
+    background: white;
+    border-radius: 28px;
+    padding: 20px;
+    width: 380px;
+    flex: 1;
+    min-width: 280px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Contenedor de tarjetas */
+.cards-members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Tarjeta individual */
+.card-members {
     background: white;
     border-radius: 28px;
     width: 320px;
-    margin: 15px;
-    display: inline-block;
-    vertical-align: top;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
 }
 
-.Membresias div div:first-child {
+
+
+/* Cabecera de la tarjeta (verde) */
+.card-header {
     background: #0b7231;
     color: white;
     padding: 20px;
-    border-radius: 28px 28px 0 0;
+    text-align: center;
 }
 
-.Membresias div div:first-child h2 {
+.card-header h3 {
     color: white;
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+.card-header p {
+    color: #ffd966;
     margin: 0;
 }
 
-.Membresias div div:first-child p {
-    color: #ffd966;
-}
-
-.Membresias div div:last-child {
+/* Cuerpo de la tarjeta */
+.card-body {
     padding: 20px;
 }
 
-/* Listas simples (sin ::before) */
-.Membresias ul {
-    list-style: none;
-    padding-left: 0;
-    margin: 15px 0;
-}
-
-.Membresias li {
-    display: block;
-    background: #f0f7f0;
-    margin: 8px 0;
-    padding: 8px 12px;
-    border-radius: 40px;
-    color: #1e5a2a;
-}
-
-/* Espacios disponibles */
-.Membresias h3 {
+.espacios {
     background: #ffecb3;
     display: inline-block;
     padding: 6px 15px;
     border-radius: 40px;
     font-size: 0.9rem;
+    margin-bottom: 15px;
 }
 
-/* Precio */
-.Membresias h1 {
+.card-body ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 15px 0;
+}
+
+.card-body li {
+    background: #f0f7f0;
+    margin: 8px 0;
+    padding: 8px 12px;
+    border-radius: 40px;
+    color: #1e5a2a;
+    text-align: center;
+}
+
+.precio {
     font-size: 2rem;
     color: #e67e22;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px 0;
 }
 
-/* Botón unirse */
-.Membresias a {
+.precio span {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.btn-unirse {
     display: block;
     background: #0b7231;
     color: white;
     text-decoration: none;
-    padding: 10px;
+    padding: 12px;
     border-radius: 40px;
     text-align: center;
+    font-weight: bold;
+    transition: background 0.2s;
 }
 
-.Membresias a:hover {
+.btn-unirse:hover {
     background: #e67e22;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .card-members {
+        width: 90%;
+        max-width: 320px;
+    }
+    
+    .form-buscar, .form-publicar {
+        width: 100%;
+    }
 }
